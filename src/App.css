@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+/* html{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+} */
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0E0E0E;
+}
+
+li, a{
+    font-family: "Inter",sans-serif;
+    font-weight: 200;
+    font-size: 1.25rem;
+    color: #DBDBDB;
+    text-decoration: none;
+}
+
+.button{
+    padding: 1rem 3rem;
+}
+
+.bg_img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    opacity: 40%;
+}
+
+.bg_img_content{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    filter: blur(5px);
+    opacity: 40%;
+}
+
+.hero_section{
+    height: 100vh;
+    max-width: 100%;
+}
+.content_section{
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 14.25rem;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    width: 8rem;
+    cursor: pointer;
+}
+
+.footer_logo{
+    width: 7em;
+    cursor: pointer;
+}
+
+nav{
+    margin-right: 10.5rem;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0rem 1.5rem;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    font-size: 2rem;
+}
+
+.nav_links li a:hover{
+    color: #6BD4BB;
+}
+
+.hero_h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 8rem;
+    color: #fff;
+    font-style: italic;
+    padding-left: 14.25rem;
+    padding-top: 14rem;
+}
+
+.content_h1_1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 4.25rem;
+    color: #fff;
+    font-style: italic;
+    padding-left: 10.25rem;
+    padding-top: 10rem;
+}
+.content_h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 4.25rem;
+    color: #fff;
+    font-style: italic;
+    padding-left: 14.25rem;
+}
+
+.hero_h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+    word-wrap: break-word;
+    color: #fff;
+    padding-left: 14.25rem;
+    padding-top: 5.25rem;
+    line-height: 4rem;
+}
+
+.footer_h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 1.625rem;
+    color: #fff;
+}
+
+.footer_h3 span{
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.content_p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 150;
+    font-size: 1.375rem;
+    color: #fff;
+    padding-left: 10.25rem;
+    padding-top: 3rem;
+    line-height: 2.5rem;
+}
+
+.hero_btn{
+    background-color: #5B5550;
+    width: 220px;
+    height: 80px;
+    border-radius: 20px;
+    margin-left: 14rem;
+    margin-top: 4rem;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.5);
+    border: 0;
+    font-size: 1.25rem;
+    transition: all 0.3s ease 0s;
+}
+
+
+.hero_btn:hover{
+    color: #ffffff;
+    border: 1px #fff solid;
+    border-color: #7e7e7e;
+    box-shadow: 0px 0px 7px 0px;
+    background-color: #312e2b;
+}
+
+.img_content{
+    width: 37%;
+    border-radius: 10px;
+    height: 65vh;
+    margin-top: 16rem;
+    margin-right: 8rem;
+}
+
+.wrapper_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-brands{
+    font-size: 2.5rem;
+    margin: 0.7rem;
+}
+
+footer{
+    color: #fff;
+    background-color: #0E0E0E;
+}
+
+.footer_section{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+@media (max-width:768px){
+    body{
+        background-color: #0E0E0E;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .button {
+        padding: 1rem 1rem;
+    }
+
+    .hero_section {
+        min-width: 768px;
+        height: 50vh;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5rem;
+        position: fixed;
+        width: 100%;
+    }
+
+    .logo {
+        width: 5em;
+        cursor: pointer;
+    }
+
+    li, a {
+        font-family: "Inter", sans-serif;
+        font-weight: 200;
+        font-size: 1rem;
+        color: #DBDBDB;
+        text-decoration: none;
+    }
+
+    nav{
+        margin-right: 0;
+    }
+
+    .hero_h1 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 200;
+        font-size: 3rem;
+        color: #fff;
+        font-style: italic;
+        padding-left: 7.25rem;
+        padding-top: 6rem;
+    }
+
+    .hero_h3 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 100;
+        font-size: 1.25rem;
+        color: #fff;
+        padding-left: 7.25rem;
+        padding-top: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    .hero_btn {
+        background-color: #5B5550;
+        width: 130px;
+        height: 50px;
+        border-radius: 20px;
+        margin-left: 7rem;
+        margin-top: 2rem;
+        color: #fff;
+        color: rgba(255, 255, 255, 0.5);
+        border: 0;
+        font-size: 0.9rem;
+        transition: all 0.3s ease 0s;
+    }
+
+    .bg_img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        min-height: 0;
+        height: 50vh;
+        opacity: 40%;
+    }
+
+    .bg_img_content {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        min-height: 0px;
+        filter: blur(5px);
+        opacity: 40%;
+    }
+
+    .content_h1_1 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 200;
+        font-size: 3.25rem;
+        color: #fff;
+        font-style: italic;
+        padding-left: 8.25rem;
+        padding-top: 6rem;
+    }
+
+    .content_h1 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 200;
+        font-size: 3.25rem;
+        color: #fff;
+        font-style: italic;
+        padding-left: 13.25rem;
+    }
+
+    .wrapper_content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content_p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 150;
+        font-size: 1rem;
+        color: #fff;
+        padding-left: 8.25rem;
+        padding-top: 2.25rem;
+        line-height: 1.5rem;
+        width: 80%;
+    }
+
+    .img_content {
+        width: 65%;
+        height: 30vh;
+        margin-top: 2.5rem;
+        margin-right: 0;
+    }
+
+    footer {
+        margin: 0;
+        color: #fff;
+    }
+
+    .fa-brands{
+        font-size: 1.5rem;
+    }
+
+    .footer_logo {
+        width: 4em;
+        cursor: pointer;
+    }
+
+    .footer_h3 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 100;
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    .footer_h3 span {
+        font-family: 'Inter', sans-serif;
+        font-weight: 100;
+        font-size: 0.7rem;
+        color: #fff;
+    }
+
+}
